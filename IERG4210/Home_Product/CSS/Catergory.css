@@ -41,7 +41,7 @@
 
 .Catergory-page-header .showlist::after{
     content: "";
-    background-image: url(/Users/mwl/Desktop/IERG4210/Home_Product/CSS/shopping-cart.png);
+    background-image: url(IERG4210/Home_Product/CSS/shopping-cart.png);
     background-size: cover;
     border: transparent;
     width: 50px;
@@ -152,7 +152,7 @@ body .navigation-bar .all-items button{
 body .navigation-bar .all-items button::after{
     content: "";
     background-size: cover;
-    background-image: url(/Users/mwl/Desktop/IERG4210/Home_Product/CSS/index.png);
+    background-image: url(IERG4210/Home_Product/CSS/index.png);
     width: 50px;
     height: 50px;
     margin: auto;
