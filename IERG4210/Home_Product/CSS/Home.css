@@ -1,0 +1,309 @@
+*{
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: medium;
+    box-sizing: border-box;
+}
+
+/* Header */
+.home-page-header{
+    padding: 10px;
+    text-align: left;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border-bottom-width: 5px;
+    border-bottom-style: solid;
+    border-bottom-color: #926a6a;
+} 
+
+.home-page-header h1{
+    font-size: 38px;
+    text-shadow: 2px 2px 4px rgba(75, 61, 61, 0.378);
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.home-page-header .showlist{
+    display: flex;
+    flex-direction: column-reverse;
+    text-decoration: underline;
+    border: transparent;
+    background-color: #ffffff;
+    z-index: 0;
+    cursor: pointer;
+    max-width: fit-content;
+    height: fit-content;
+}
+
+.home-page-header .showlist::after{
+    content: "";
+    background-image: url(/Users/mwl/Desktop/IERG4210/Home_Product/CSS/shopping-cart.png);
+    background-size: cover;
+    border: transparent;
+    width: 50px;
+    height: 50px;
+    margin: auto;
+}
+
+.home-page-header .hidden{
+    display: none;
+    border: 1px solid #000000;
+    background-color: #ffffff88;
+    position: absolute;
+    right: 0;
+    z-index: 10;
+    width: 40%;
+    height: 95%;
+}
+
+.home-page-header .hidden .hidden-title{
+    text-decoration: underline;
+    text-align: left;
+    padding: 10px;
+}
+
+
+.home-page-header .showlist:hover + .hidden, .hidden:hover{
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.home-page-header .hidden .selected-product{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 10px;
+    padding: 2px 0 15px 10px;
+}
+
+.home-page-header .hidden .selected-product .product-quantity{
+    display: flex;
+    flex-direction: column;
+}
+
+.home-page-header .hidden .checkout{
+    display: block;
+    background-color: #15d57c9e;
+    cursor: pointer;
+    position: absolute;
+    bottom: 0;
+    width: 95%;
+    align-self: center;
+    margin: 5px;
+}
+
+.home-page-header .hidden .checkout a{
+    text-decoration: none;
+    color: #000000;
+    background-color: transparent;
+}
+
+.home-page-header .hidden .checkout:hover{
+    cursor: pointer;
+    background-color: #e1dcdc7c;
+}
+
+.home-page-header .hidden .total{
+    padding-left: 12px;
+    text-align: left;
+    position: absolute;
+    bottom: 5%;
+}
+
+/* Header */
+
+/* Navigation */
+body .navigation-bar{
+    border-bottom: #000000 5px;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    border-bottom-width: 5px;
+    border-bottom-style: solid;
+    border-bottom-color: #926a6a;
+    width: 100%;
+}
+
+body .navigation-bar .catergory-container{
+    display: flex;
+    flex-direction: row;
+}
+
+body .navigation-bar .all-items button{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    border: transparent;
+    background-color: #fff;
+    z-index: 0;
+    text-decoration: underline;
+    font-size: 12px;
+    cursor: pointer;
+    max-width: fit-content;
+    height: fit-content;
+    align-self: flex-start;
+}
+body .navigation-bar .all-items button::after{
+    content: "";
+    background-size: cover;
+    background-image: url(/Users/mwl/Desktop/IERG4210/Home_Product/CSS/index.png);
+    width: 50px;
+    height: 50px;
+    margin: auto;
+}
+
+body .navigation-bar .all-items button:hover{
+    background-color: #e1dcdc7c;
+    color: #000000;
+}
+
+body .navigation-bar .swiper .swiper-wrapper{
+    display: flex;
+    flex-direction: row;
+    font-size: 24px;
+    flex-wrap: wrap;
+    gap: 5em;
+}
+
+body .navigation-bar .swiper .swiper-wrapper .swiper-slide a{
+    text-decoration: none;
+    background-color: transparent;
+    position: relative;
+    font-size: 24px;
+}
+
+body .navigation-bar .swiper .swiper-wrapper .swiper-slide button{
+    block-size: 73.5px;
+    width: auto;
+    padding: 10px;
+    text-align: center;
+    justify-content: center;
+    border: none;
+    background-color: rgba(157, 236, 242, 0.416);
+    clip-path: polygon(15% 100%, 85% 100%, 100% 0, 0 0);
+    color: black;
+    width: 80.41px;
+}
+body .navigation-bar .swiper .swiper-wrapper .swiper-slide button:hover{
+    cursor: pointer;
+    background: #e1dcdc7c;
+}
+
+
+/* Navigation */
+
+/* Product */
+body .container{
+    margin-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: fit-content;
+    height: fit-content;
+}
+
+body .container h2{
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 5px;
+    padding: 15px 0 20px 10px;
+}
+
+body .container .all-products .all-products-container{
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 10px;
+    padding-left: 30px;
+    height: 100%;
+    padding-bottom: 122px;
+}
+
+body .container .all-products .all-products-container .all-products-content .product-img-wrapper{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 5em;
+}
+
+body .container .all-products .all-products-container .all-products-content .product-img-wrapper .product-slide{
+    border: 5px solid #b3e0dcc5;
+}
+body .preview{
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+}
+body .container .all-products .all-products-container .all-products-content .product-img-wrapper .product-slide .preview img{
+    width: 200px;
+    height: 150px;
+    object-fit: contain;
+}
+
+body .preview-name{
+    font-size: 22px;
+    text-align: center;
+    background-color: #15d57c9e;
+
+}
+
+body .info{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+body .product-slide .preview-price{
+    text-align: center;
+    margin: 5px;
+}
+
+body .product-slide .preview-price a{
+    text-decoration: none;
+    font-size: 20px;
+}
+
+
+body .product-slide button{
+    background-color: transparent;
+    font-size: 15px;
+    margin: 6px 0;
+    padding: 2px;
+}
+
+body .product-slide button:hover{
+    background-color: #e1dcdc7c;
+    cursor: pointer;
+}
+
+
+/* Product */
+
+
+/* Footer */
+body .footerLinkInserted{
+    margin-top: 10px;
+    background-color: #926a6a;
+    position: sticky;
+    bottom: 0;
+    width: 100%;
+}
+body footer nav.footerLink{
+    text-align: right;
+    padding-bottom: 4px;
+    padding-right: 5px;
+    background-color: #865353;
+    color: #ffffff;
+}
+
+body footer nav.footerLink a{
+    color: #ffffff;
+    background-color: transparent;
+}
+/* Footer */
