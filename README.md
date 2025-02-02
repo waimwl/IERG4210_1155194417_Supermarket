@@ -1,1 +1,2 @@
-If you can't go to any file, please change it to full path for all hyperlink and photo
+1155194417 IERG4210 project
+Here is the github repository with static host in github
