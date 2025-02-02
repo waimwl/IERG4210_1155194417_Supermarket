@@ -222,6 +222,7 @@ body .container .all-products .all-products-container{
     padding-left: 30px;
     height: 100%;
     padding-bottom: 122px;
+    justify-content: space-evenly;
 }
 
 body .container .all-products .all-products-container .all-products-content .product-img-wrapper{
